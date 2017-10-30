@@ -11,12 +11,14 @@ import com.example.onetrickpony.banktracker.R;
  */
 
 public class PaymentTypeHolder extends RecyclerView.ViewHolder {
-    TextView paymentType;
+    TextView companyNameType;
     TextView sum;
+    TextView ptType;
 
     public PaymentTypeHolder(View v) {
         super(v);
-        paymentType = (TextView)itemView.findViewById(R.id.paymentTypeTextView);
+        companyNameType = (TextView)itemView.findViewById(R.id.companyName_2TextView);
         sum = (TextView)itemView.findViewById(R.id.companySumTextView);
+        ptType = (TextView)itemView.findViewById(R.id.ptTypeTextView);
     }
 }

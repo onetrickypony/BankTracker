@@ -30,7 +30,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public static final String TABLE_TRANSACTIONS = "transactions";
     public static final String DATE_TIME = "date_time";
-    public static final String SUM = "sum";
+    public static final String SUM = "tr_sum"; //
     public static final String DIRECTION = "direction";
     public static final String CARD_ID = "card_id";
     public static final String COMPANY_ID = "company_id";

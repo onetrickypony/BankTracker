@@ -16,17 +16,4 @@
             android:title="@string/transactions" />
     </group>
 
-    <item android:title="@string/communicate_item">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/share_item" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/send_item" />
-        </menu>
-    </item>
-
 </menu>

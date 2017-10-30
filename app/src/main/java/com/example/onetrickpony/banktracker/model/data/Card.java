@@ -12,8 +12,8 @@ public class Card {
 
     private String type;
     private String number;
-    private int plusSum;
-    private int minusSum;
+    private float plusSum;
+    private float minusSum;
 
     public String getType() {
         return type;
@@ -23,15 +23,15 @@ public class Card {
         return number;
     }
 
-    public int getPlusSum() {
+    public float getPlusSum() {
         return plusSum;
     }
 
-    public int getMinusSum() {
+    public float getMinusSum() {
         return minusSum;
     }
 
-    public int getResSum() {
+    public float getResSum() {
         return plusSum - minusSum;
     }
 
@@ -43,11 +43,11 @@ public class Card {
         this.number = number;
     }
 
-    public void setPlusSum(int plusSum) {
+    public void setPlusSum(float plusSum) {
         this.plusSum = plusSum;
     }
 
-    public void setMinusSum(int minusSum) {
+    public void setMinusSum(float minusSum) {
         this.minusSum = minusSum;
     }
 }

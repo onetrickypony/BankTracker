@@ -35,7 +35,7 @@ public class ModelCreator {
                     if (address.equals(bankPhoneNumbers.get(j)))
                     {
                         Pattern pattern = Pattern.
-                                compile("(ECMC|MAES|VISA)(\\d+) (\\d+.\\d+.\\d+ \\d+:\\d+) (\\S+) (\\d+|\\d.\\d)р (.+) Баланс(.+)");// не добавляются не целые суммы
+                                compile("(ECMC|MAES|VISA)(\\d+) (\\d+.\\d+.\\d+ \\d+:\\d+) (\\S+) (\\d+|\\d+.\\d+)р (.*)Баланс(.+)");// не добавляются не целые суммы
 
                         if (pattern.matcher(body).matches())
                         {
@@ -208,7 +208,6 @@ public class ModelCreator {
         String food = "Фаст-фуд";
         String drugstore = "Аптека";
         String coffeeshop = "Кофейня";
-        String money_box = "Сберегательный счет";
         String supermarket = "Супермаркет";
         String cafe = "Кафе";
         String cinema = "Кинотеатр";
@@ -218,11 +217,11 @@ public class ModelCreator {
         String input = "+";
         String other = "Другое";
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "MCDONALDS"); // как-нибудь обрезать номер
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "MCDONALDS");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, food);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "BURGER KING");// как-нибудь обрезать номер
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "BURGER KING");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, food);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
@@ -238,24 +237,20 @@ public class ModelCreator {
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, food);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "APTEKA");// как-нибудь обрезать номер
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "APTEKA");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, drugstore);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "COFFEE HOUSE"); // как-нибудь обрезать номер
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "COFFEE HOUSE");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, coffeeshop);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "JEFFREY"); // как-нибудь обрезать номер
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "JEFFREY");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, coffeeshop);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
         contentValuesCompanies.put(DBHelper.COMPANY_NAME, "CHAYNIKOFF");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, coffeeshop);
-        db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
-
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "KOPILKA KARTA-VKLAD");
-        contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, money_box);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
         contentValuesCompanies.put(DBHelper.COMPANY_NAME, "KOFESHOP 4.20");
@@ -266,7 +261,7 @@ public class ModelCreator {
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, supermarket);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "PEREKRESTOK");// как-нибудь обрезать номер
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "PEREKRESTOK");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, supermarket);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
@@ -274,7 +269,7 @@ public class ModelCreator {
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, supermarket);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "DIKSI"); // // как-нибудь обрезать номер
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "DIKSI");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, supermarket);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
@@ -298,7 +293,7 @@ public class ModelCreator {
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, supermarket);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 
-        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "RESTORAN MOKHOVAYA");
+        contentValuesCompanies.put(DBHelper.COMPANY_NAME, "MOKHOVAYA");
         contentValuesCompanies.put(DBHelper.PAYMENT_TYPE, cafe);
         db.insert(DBHelper.TABLE_COMPANIES, null, contentValuesCompanies);
 

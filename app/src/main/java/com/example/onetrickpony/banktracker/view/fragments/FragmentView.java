@@ -70,7 +70,7 @@ public class FragmentView extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_view, container, false);
 
-        rv = (RecyclerView) v.findViewById(R.id.rv);
+        rv = (RecyclerView) v.findViewById(R.id.rv_wastes);
         rv.setHasFixedSize(true);
         llm = new LinearLayoutManager(getActivity().getApplicationContext());
         rv.setLayoutManager(llm);

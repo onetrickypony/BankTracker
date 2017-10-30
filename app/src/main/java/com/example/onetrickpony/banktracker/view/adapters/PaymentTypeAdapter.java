@@ -32,8 +32,8 @@ public class PaymentTypeAdapter extends RecyclerView.Adapter<PaymentTypeHolder>{
     @Override
     public void onBindViewHolder(PaymentTypeHolder holder, int position) {
         holder.sum.setText(String.valueOf(ptList.get(position).getSum()));
-        holder.paymentType.setText(ptList.get(position).getPaymentType());
-
+        holder.companyNameType.setText(ptList.get(position).getcName());
+        holder.ptType.setText(ptList.get(position).getPaymentType());
     }
 
     // Return the size of your dataset (invoked by the layout manager)

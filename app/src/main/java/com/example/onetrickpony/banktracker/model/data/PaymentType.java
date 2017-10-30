@@ -6,13 +6,24 @@ package com.example.onetrickpony.banktracker.model.data;
 
 public class PaymentType {
     private String paymentType;
-    private int sum;
+    private String cName;
+
+    public void setcName(String cName) {
+        this.cName = cName;
+    }
+
+    public String getcName() {
+
+        return cName;
+    }
+
+    private float sum;
 
     public String getPaymentType() {
         return paymentType;
     }
 
-    public int getSum() {
+    public float getSum() {
         return sum;
     }
 
@@ -20,7 +31,7 @@ public class PaymentType {
         this.paymentType = paymentType;
     }
 
-    public void setSum(int sum) {
+    public void setSum(float sum) {
         this.sum = sum;
     }
 }
